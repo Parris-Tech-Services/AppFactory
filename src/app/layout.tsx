@@ -16,6 +16,12 @@ export default function RootLayout({
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full">
         <AppShell>{children}</AppShell>
+        <script
+          src="https://cdn.jsdelivr.net/gh/joshualparris/JoshHub@35c4348b4adfbc1c64bad8a3d3e31ede008a4441/public/podcast-dock.js"
+          data-topics="software"
+          data-label="🎧 Listen to a different software-building podcast"
+          defer
+        />
       </body>
     </html>
   );
