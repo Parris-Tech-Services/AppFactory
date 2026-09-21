@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { Filter } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { PhaseBadge, RiskBadge } from "@/components/project-badges";
-import { Badge } from "@/components/ui/Badge";
+import { Badge } from "@/components/ui/badge";
 import { useProjectStore } from "@/context/project-store";
 import type { AgentTask } from "@/lib/types";
 

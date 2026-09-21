@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { Check, Copy, Download, Trash2 } from "lucide-react";
 import { buildPhases } from "@/lib/phases";
 import type { BuildPhase, Project, RiskLevel } from "@/lib/types";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { useProjectStore } from "@/context/project-store";
 
 const riskOptions: RiskLevel[] = ["low", "medium", "high"];

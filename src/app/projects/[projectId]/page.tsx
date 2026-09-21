@@ -6,8 +6,8 @@ import { ArrowLeft, Copy, ExternalLink } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { PhaseBadge, RiskBadge } from "@/components/project-badges";
 import { ProjectControls } from "@/components/project-controls";
-import { Badge } from "@/components/ui/Badge";
-import { ButtonLink } from "@/components/ui/Button";
+import { Badge } from "@/components/ui/badge";
+import { ButtonLink } from "@/components/ui/button";
 import { useProjectStore } from "@/context/project-store";
 
 function ListBlock({ title, items }: { title: string; items: string[] }) {

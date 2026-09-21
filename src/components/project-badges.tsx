@@ -1,4 +1,4 @@
-import { Badge } from "@/components/ui/Badge";
+import { Badge } from "@/components/ui/badge";
 import { getPhaseLabel, riskLabels } from "@/lib/phases";
 import type { BuildPhase, RiskLevel } from "@/lib/types";
 

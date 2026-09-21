@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { Search } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { ProjectCard } from "@/components/project-card";
-import { ButtonLink } from "@/components/ui/Button";
+import { ButtonLink } from "@/components/ui/button";
 import { useProjectStore } from "@/context/project-store";
 import type { Project } from "@/lib/types";
 
