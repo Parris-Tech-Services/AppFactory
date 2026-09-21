@@ -4,7 +4,7 @@ import { AlertTriangle, CheckCircle2, FolderKanban, ListChecks } from "lucide-re
 import { MetricCard } from "@/components/metric-card";
 import { PageHeader } from "@/components/page-header";
 import { ProjectCard } from "@/components/project-card";
-import { ButtonLink } from "@/components/ui/button";
+import { ButtonLink } from "@/components/ui/Button";
 import { useProjectStore } from "@/context/project-store";
 
 export default function DashboardPage() {

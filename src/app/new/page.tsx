@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { ArrowRight, ClipboardList } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import { useProjectStore } from "@/context/project-store";
 
 const wizardSteps = [

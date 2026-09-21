@@ -3,8 +3,8 @@
 import { useRef, useState } from "react";
 import { ClipboardList, Download, KeyRound, PlugZap, RotateCcw, ShieldCheck, Upload } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/Badge";
+import { Button } from "@/components/ui/Button";
 import { useProjectStore } from "@/context/project-store";
 import { parseProjectsBackup } from "@/lib/storage";
 
