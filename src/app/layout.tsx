@@ -16,13 +16,6 @@ export default function RootLayout({
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full">
         <AppShell>{children}</AppShell>
-        <script
-          src="https://cdn.jsdelivr.net/gh/joshualparris/JoshHub@ebb0d17495c92d3ce09df1fd1bdb5d4c2056914d/public/podcast-launcher-v3.js"
-          data-topics="software"
-          data-label="🎧 Listen to a different software-building podcast"
-          data-launcher-label="🎧 Podcasts"
-          defer
-        />
       </body>
     </html>
   );
