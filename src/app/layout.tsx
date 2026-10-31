@@ -1,3 +1,4 @@
+import Script from "next/script";
 import type { Metadata } from "next";
 import { AppShell } from "@/components/app-shell";
 import "./globals.css";
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full">
         <AppShell>{children}</AppShell>
+      <Script src="https://parris-analytics.parris-neathaustralia.workers.dev/tracker.js" strategy="afterInteractive" data-site="appfactory" />
       </body>
     </html>
   );
