@@ -42,8 +42,10 @@ jobs:
 
   verify:
     name: Dependency, build and security checks
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.actor == 'parristechservices-prog' && startsWith(github.ref, 'refs/heads/autopatch/'))
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
