@@ -13,7 +13,7 @@ permissions:
 jobs:
   refresh-lockfile:
     name: Regenerate lockfile for isolated AutoPatch branch
-    if: github.event_name == 'push' && github.repository == 'Parris-Tech-Services/AppFactory' && startsWith(github.ref, 'refs/heads/autopatch/') && github.actor != 'github-actions[bot]'
+    if: github.event_name == 'push' && github.repository == 'Parris-Tech-Services/AppFactory' && startsWith(github.ref, 'refs/heads/autopatch/') && github.actor == 'parristechservices-prog'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -26,6 +26,8 @@ jobs:
           node-version: '22'
       - name: Regenerate npm lockfile (no package scripts)
         run: npm install --package-lock-only --ignore-scripts --no-audit --no-fund
+      - name: Resolve safe npm advisories in lockfile without executing scripts
+        run: npm audit fix --package-lock-only --ignore-scripts --no-fund
       - name: Commit generated lockfile on isolated branch only
         run: |
           if git diff --quiet -- package-lock.json; then
